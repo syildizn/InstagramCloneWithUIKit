@@ -1,0 +1,6 @@
+framework module Pods_InstagramCloneWithUIKit {
+  umbrella header "Pods-InstagramCloneWithUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
