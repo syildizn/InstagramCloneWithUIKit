@@ -23,14 +23,15 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func SignIn(_ sender: Any) {
+  
+    @IBAction func signIn(_ sender: Any) {
         performSegue(withIdentifier: "toFeedVC", sender: nil)
+        print("basıldı")
     }
     
-    
-    @IBAction func SignUp(_ sender: Any) {
+    @IBAction func signUp(_ sender: Any) {
+        
     }
-    
     
 }
 
