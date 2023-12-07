@@ -119,7 +119,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk5-qB-ugV">
-                                                    <rect key="frame" x="16.666666666666671" y="0.0" width="74" height="21"/>
+                                                    <rect key="frame" x="16.666666666666671" y="7" width="74" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -130,14 +130,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-yB-oir">
-                                                    <rect key="frame" x="20" y="302" width="55" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Like"/>
-                                                    <connections>
-                                                        <action selector="likeButtonClicked:" destination="Wul-AL-68r" eventType="touchUpInside" id="eOp-16-D7q"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-Ni-GpU">
                                                     <rect key="frame" x="333.66666666666669" y="308" width="11" height="21"/>
                                                     <constraints>
@@ -153,20 +145,28 @@
                                                         <constraint firstAttribute="height" constant="224" id="KSF-fB-9Uc"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-yB-oir">
+                                                    <rect key="frame" x="5" y="308" width="55" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Like"/>
+                                                    <connections>
+                                                        <action selector="likeButtonClicked:" destination="Wul-AL-68r" eventType="touchUpInside" id="eOp-16-D7q"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="zDh-EK-ckX" firstAttribute="centerX" secondItem="WJ1-Iu-AAu" secondAttribute="centerX" id="2kI-AG-fED"/>
                                                 <constraint firstItem="2pF-jh-2Si" firstAttribute="leading" secondItem="WJ1-Iu-AAu" secondAttribute="leadingMargin" constant="10" id="9mJ-TD-lrx"/>
                                                 <constraint firstItem="Wk5-qB-ugV" firstAttribute="leading" secondItem="WJ1-Iu-AAu" secondAttribute="leadingMargin" constant="-3.3333333333333286" id="Adk-ns-wpK"/>
-                                                <constraint firstItem="FdO-yB-oir" firstAttribute="leading" secondItem="WJ1-Iu-AAu" secondAttribute="leadingMargin" id="DqZ-GS-PmA"/>
+                                                <constraint firstItem="FdO-yB-oir" firstAttribute="leading" secondItem="WJ1-Iu-AAu" secondAttribute="leadingMargin" constant="-15" id="DqZ-GS-PmA"/>
                                                 <constraint firstItem="2pF-jh-2Si" firstAttribute="top" secondItem="WJ1-Iu-AAu" secondAttribute="top" constant="29" id="I1a-BD-TAj"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="OrL-Ni-GpU" secondAttribute="bottom" constant="8" id="L5Z-KT-iTJ"/>
                                                 <constraint firstItem="zDh-EK-ckX" firstAttribute="leading" secondItem="WJ1-Iu-AAu" secondAttribute="leadingMargin" constant="-3.3333333333333428" id="PLW-SC-bTV"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OrL-Ni-GpU" secondAttribute="trailing" constant="-3.6666666666666856" id="VH7-x1-Ovq"/>
                                                 <constraint firstItem="2pF-jh-2Si" firstAttribute="trailing" secondItem="WJ1-Iu-AAu" secondAttribute="trailingMargin" id="X3U-iw-Qyc"/>
-                                                <constraint firstItem="2pF-jh-2Si" firstAttribute="top" secondItem="Wk5-qB-ugV" secondAttribute="bottom" constant="8" id="YOR-qc-nQ5"/>
+                                                <constraint firstItem="2pF-jh-2Si" firstAttribute="top" secondItem="Wk5-qB-ugV" secondAttribute="bottom" constant="1" id="YOR-qc-nQ5"/>
                                                 <constraint firstItem="OrL-Ni-GpU" firstAttribute="top" secondItem="zDh-EK-ckX" secondAttribute="bottom" id="cDL-AN-nRV"/>
-                                                <constraint firstItem="FdO-yB-oir" firstAttribute="bottom" secondItem="WJ1-Iu-AAu" secondAttribute="bottomMargin" id="q2K-a0-pPn"/>
+                                                <constraint firstItem="FdO-yB-oir" firstAttribute="bottom" secondItem="WJ1-Iu-AAu" secondAttribute="bottomMargin" constant="6" id="q2K-a0-pPn"/>
                                                 <constraint firstItem="zDh-EK-ckX" firstAttribute="top" secondItem="2pF-jh-2Si" secondAttribute="bottom" constant="23" id="xiC-Cq-Dt6"/>
                                             </constraints>
                                         </tableViewCellContentView>
